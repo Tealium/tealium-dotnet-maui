@@ -1,0 +1,112 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
+		<!--<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>-->
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
+		<OutputType>Exe</OutputType>
+		<RootNamespace>TealiumMauiExample</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Display name -->
+		<ApplicationTitle>TealiumMauiExample</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.tealium.example</ApplicationId>
+		<ApplicationIdGuid>1c9dee5e-03b9-4bc9-9a18-6a5cd98f57f6</ApplicationIdGuid>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	  <WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\APIs\Tealium.Common\Tealium.Common.csproj">
+	    <ReferenceSourceTarget></ReferenceSourceTarget>
+	  </ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Integrations\Firebase\Tealium.RemoteCommands.Firebase.Common\Tealium.RemoteCommands.Firebase.Common.csproj" />
+	</ItemGroup>
+	<ItemGroup Condition="$(TargetFramework.Contains('-ios')) != false ">
+		<ProjectReference Include="..\APIs\Tealium.iOS\Tealium.iOS.csproj" />
+	</ItemGroup>
+	<ItemGroup Condition="$(TargetFramework.Contains('-ios')) != false ">
+		<ProjectReference Include="..\APIs\Tealium.Platform.iOS\Tealium.Platform.iOS.csproj" />
+	</ItemGroup>
+	<ItemGroup Condition="$(TargetFramework.Contains('-ios')) != false ">
+		<ProjectReference Include="..\Integrations\Firebase\Tealium.RemoteCommands.Firebase.iOS\Tealium.RemoteCommands.Firebase.iOS.csproj" />
+	</ItemGroup>
+	<ItemGroup Condition="$(TargetFramework.Contains('-android')) != false ">
+		<ProjectReference Include="..\APIs\Tealium.Platform.Droid\Tealium.Platform.Droid.csproj">
+		  <ReferenceSourceTarget></ReferenceSourceTarget>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup Condition="$(TargetFramework.Contains('-android')) != false ">
+		<ProjectReference Include="..\APIs\Tealium.Droid\Tealium.Droid.csproj">
+		  <ReferenceSourceTarget></ReferenceSourceTarget>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup Condition="$(TargetFramework.Contains('-android')) != false ">
+		<ProjectReference Include="..\Integrations\Firebase\Tealium.RemoteCommands.Firebase.Droid\Tealium.RemoteCommands.Firebase.Droid.csproj">
+			  <ReferenceSourceTarget></ReferenceSourceTarget>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-android'">
+	  <PackageReference Include="Xamarin.Firebase.Analytics" Version="121.2.0.1" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-ios'">
+      <BundleResource Include="Platforms\iOS\GoogleService-Info.plist" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Platforms\iOS\firebase.json" />
+	  <None Remove="Platforms\Android\firebase.json" />
+	  <None Remove="Platforms\Android\EmptyJSONFile.json" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Platforms\iOS\firebase.json" />
+	  <BundleResource Include="Platforms\Android\google-services.json" />
+	</ItemGroup>
+	<ItemGroup>
+	  <AndroidAsset Include="Platforms\Android\firebase.json" />
+	</ItemGroup>
+</Project>

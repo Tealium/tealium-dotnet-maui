@@ -1,7 +1,6 @@
 using System;
 using Foundation;
 using ObjCRuntime;
-using TealiumWrapperCocoapods;
 using UIKit;
 using WebKit;
 
@@ -516,7 +515,6 @@ namespace Tealium.Platform.iOS
 		// +(NSString * _Nonnull)instanceTypeId __attribute__((warn_unused_result("")));
 		[Static]
 		[Export ("instanceTypeId")]
-		[Verify (MethodToProperty)]
 		string InstanceTypeId { get; }
 
 		// @property (readonly, copy, nonatomic) NSDictionary<NSString *,id> * _Nonnull trackDictionary;

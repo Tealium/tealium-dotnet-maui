@@ -40,7 +40,9 @@
     <!-- Platform-Specific Bindings Libraries  -->
     <!-- Main SDKs -->
     <file src="../../APIs/Tealium.Platform.iOS/bin/Release/net8.0-ios/Tealium.Platform.iOS.dll" target="lib/net8.0-ios12/Tealium.Platform.iOS.dll" />
+    <file src="../../APIs/Tealium.Platform.iOS/bin/Release/net8.0-ios/Tealium.Platform.iOS.resources/**" target="lib/net8.0-ios12/Tealium.Platform.iOS.resources" />
     <file src="../../APIs/Tealium.Platform.Droid/bin/Release/net8.0-android/Tealium.Platform.Droid.dll" target="lib/net8.0-android33/Tealium.Platform.Droid.dll" />
+    <file src="../../APIs/Tealium.Platform.Droid/bin/Release/net8.0-android/bindings-release.aar" target="lib/net8.0-android33/bindings-release.aar" />
     <file src="../../LICENSE.txt" target=""/>
     <file src="../../logo_64.png" target=""/>
   </files>

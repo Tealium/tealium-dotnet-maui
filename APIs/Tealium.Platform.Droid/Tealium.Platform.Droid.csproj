@@ -14,11 +14,6 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
-   <ItemGroup>
-    <LibraryProjectZip Include="Jars\bindings-release.aar">
-      <IncludeInPackage>true</IncludeInPackage>
-    </LibraryProjectZip>
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.8.10" />
     <PackageReference Include="Xamarin.Kotlin.StdLib.Common" Version="1.8.10" />

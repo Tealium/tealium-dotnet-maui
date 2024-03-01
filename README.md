@@ -1,4 +1,4 @@
-# Tealium Mobile Library for .NET Multi-platflorm Application UI (.NET MAUI)
+# Tealium Mobile Library for .NET Multi-platform Application UI (.NET MAUI)
 
 ## Documentation
 

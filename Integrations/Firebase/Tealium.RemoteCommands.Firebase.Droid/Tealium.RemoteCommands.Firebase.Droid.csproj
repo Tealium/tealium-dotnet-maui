@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\APIs\Tealium.Common\Tealium.Common.csproj" />
+    <ProjectReference Include="..\..\..\APIs\Tealium.Droid\Tealium.Droid.csproj" />
+    <ProjectReference Include="..\..\..\APIs\Tealium.Platform.Droid\Tealium.Platform.Droid.csproj" />
+    <ProjectReference Include="..\Tealium.RemoteCommands.Firebase.Common\Tealium.RemoteCommands.Firebase.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.9.22" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib.Common" Version="1.9.22" />
+  </ItemGroup>
+</Project>

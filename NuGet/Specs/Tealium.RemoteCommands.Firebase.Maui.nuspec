@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Tealium.RemoteCommands.Firebase.Maui</id>
+    <version>1.0.0</version>
+    <authors>tealium</authors>
+    <owners>tealium</owners>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/Tealium/tealium-maui</projectUrl>
+    <icon>logo_64.png</icon>
+    <iconUrl>https://github.com/Tealium/tealium-maui/raw/master/logo_64.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Tealium Firebase Maui integration brings support for Tealium's Firebase remote command to the Maui platform. This package provides a single cross-platform API, enabling you to develop with Tealium once for both iOS and Android platforms.</description>
+    <releaseNotes>First version of Tealium Firebase Maui</releaseNotes>
+    <copyright>Copyright 2022</copyright>
+    <tags>Tealium Firebase iOS Android</tags>
+    <!-- Insert within the <metadata> element -->
+    <dependencies>
+        <group targetFramework="net8.0-android33.0">
+            <dependency id="Xamarin.Firebase.Analytics" version="[120.0.1,121.0)"/>
+            <dependency id="Tealium.Maui" version="[1.0.0,2.0)" />
+        </group>
+        <group targetFramework="net8.0-ios12.0">
+            <dependency id="Xamarin.Firebase.iOS.Analytics" version="[8.10,9.0)" />
+            <dependency id="Tealium.Maui" version="[1.0.0,2.0)" />
+        </group>
+        <group targetFramework="net8.0">
+            <dependency id="Tealium.Maui" version="[1.0.0,2.0)" />
+        </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- Cross-platform reference assemblies -->
+    <file src="../../Integrations/Firebase/Tealium.RemoteCommands.Firebase.Common/bin/Release/net8.0/Tealium.RemoteCommands.Firebase.Common.dll" target="lib/net8.0/Tealium.RemoteCommands.Firebase.Common.dll" />
+
+    <!-- Platform-Specific Common Libraries  -->
+    <file src="../../Integrations/Firebase/Tealium.RemoteCommands.Firebase.Common/bin/Release/net8.0/Tealium.RemoteCommands.Firebase.Common.dll" target="lib/net8.0-ios12/Tealium.RemoteCommands.Firebase.Common.dll" />
+    <file src="../../Integrations/Firebase/Tealium.RemoteCommands.Firebase.Common/bin/Release/net8.0/Tealium.RemoteCommands.Firebase.Common.dll" target="lib/net8.0-android33/Tealium.RemoteCommands.Firebase.Common.dll" />
+
+    <!-- Platform-Specific Abstraction Libraries  -->
+    <file src="../../Integrations/Firebase/Tealium.RemoteCommands.Firebase.iOS/bin/Release/net8.0-ios/Tealium.RemoteCommands.Firebase.iOS.dll" target="lib/net8.0-ios12/Tealium.RemoteCommands.Firebase.iOS.dll" />
+    <file src="../../Integrations/Firebase/Tealium.RemoteCommands.Firebase.Droid/bin/Release/net8.0-android/Tealium.RemoteCommands.Firebase.Droid.dll" target="lib/net8.0-android33/Tealium.RemoteCommands.Firebase.Droid.dll" />
+
+    <file src="../../LICENSE.txt" target=""/>
+    <file src="../../logo_64.png" target=""/>
+  </files>
+</package>

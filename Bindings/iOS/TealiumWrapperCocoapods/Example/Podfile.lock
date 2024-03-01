@@ -1,0 +1,38 @@
+PODS:
+  - tealium-swift/Collect (2.12.0):
+    - tealium-swift/Core
+  - tealium-swift/Core (2.12.0)
+  - tealium-swift/Lifecycle (2.12.0):
+    - tealium-swift/Core
+  - tealium-swift/RemoteCommands (2.12.0):
+    - tealium-swift/Core
+  - tealium-swift/TagManagement (2.12.0):
+    - tealium-swift/Core
+  - tealium-swift/VisitorService (2.12.0):
+    - tealium-swift/Core
+  - TealiumWrapperCocoapods (0.1.0):
+    - tealium-swift/Collect (~> 2.12)
+    - tealium-swift/Core (~> 2.12)
+    - tealium-swift/Lifecycle (~> 2.12)
+    - tealium-swift/RemoteCommands (~> 2.12)
+    - tealium-swift/TagManagement (~> 2.12)
+    - tealium-swift/VisitorService (~> 2.12)
+
+DEPENDENCIES:
+  - TealiumWrapperCocoapods (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - tealium-swift
+
+EXTERNAL SOURCES:
+  TealiumWrapperCocoapods:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  tealium-swift: 0a099d2dae91be76cf6aed9f69806797d09c1cb9
+  TealiumWrapperCocoapods: 0d15b05eda711c75a70b6f221f9f1a1c5e5222db
+
+PODFILE CHECKSUM: 4ba0d871bd1ff9d5ac6993cc0b797c597cd05a72
+
+COCOAPODS: 1.14.3

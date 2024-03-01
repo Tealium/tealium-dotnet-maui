@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Tealium.RemoteCommands.Firebase.Maui</id>
+    <version>1.0.0</version>
+    <authors>tealium</authors>
+    <owners>tealium</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>logo_64.png</icon>
+    <projectUrl>https://github.com/Tealium/tealium-maui</projectUrl>
+    <iconUrl>https://github.com/Tealium/tealium-maui/raw/master/logo_64.png</iconUrl>
+    <description>The Tealium Firebase Maui integration brings support for Tealium's Firebase remote command to the Maui platform. This package provides a single cross-platform API, enabling you to develop with Tealium once for both iOS and Android platforms.</description>
+    <releaseNotes>First version of Tealium Firebase Maui</releaseNotes>
+    <copyright>Copyright 2022</copyright>
+    <tags>Tealium Firebase iOS Android</tags>
+    <dependencies>
+      <group targetFramework="net8.0-android33.0">
+        <dependency id="Xamarin.Firebase.Analytics" version="[120.0.1, 121.0.0)" />
+        <dependency id="Tealium.Maui" version="[1.0.0, 2.0.0)" />
+      </group>
+      <group targetFramework="net8.0-ios12.0">
+        <dependency id="Xamarin.Firebase.iOS.Analytics" version="[8.10.0, 9.0.0)" />
+        <dependency id="Tealium.Maui" version="[1.0.0, 2.0.0)" />
+      </group>
+      <group targetFramework="net8.0">
+        <dependency id="Tealium.Maui" version="[1.0.0, 2.0.0)" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Tealium.Maui</id>
+    <version>1.0.1</version>
+    <authors>Tealium</authors>
+    <owners>Tealium</owners>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://github.com/Tealium/tealium-maui</projectUrl>
+    <icon>logo_64.png</icon>
+    <iconUrl>https://github.com/Tealium/tealium-maui/raw/master/logo_64.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Tealium MAUI integration brings support for Tealium's Native iOS and Android SDKs to the .NET MAUI platform. This package provides a single cross-platform API, enabling you to develop with Tealium once for both iOS and Android platforms. The Tealium Native SDKs for iOS and Android are embedded along with the lifecycle libraries.</description>
+    <releaseNotes>The embedded Tealium SDK versions are: iOS Swift v2.10.0 and Android Kotlin v1.5.5.</releaseNotes>
+    <copyright>Copyright 2024</copyright>
+    <tags>Tealium iOS Android</tags>
+    <!-- Insert within the <metadata> element -->
+    <dependencies>
+        <group targetFramework="net8.0-android33.0">
+            <dependency id="Xamarin.Kotlin.StdLib" version="[1.5,2.0)" />
+            <dependency id="Xamarin.KotlinX.Coroutines.Core" version="[1.5,2.0)" />
+            <dependency id="Xamarin.KotlinX.Coroutines.Android" version="[1.5,2.0)" />
+        </group>
+        <group targetFramework="net8.0" />
+        <group targetFramework="net8.0-ios12.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- Cross-platform reference assemblies -->
+    <file src="../../APIs/Tealium.Common/bin/Release/net8.0/Tealium.Common.dll" target="lib/net8.0/Tealium.Common.dll" />
+
+    <!-- Platform-Specific Common Libraries  -->
+    <file src="../../APIs/Tealium.Common/bin/Release/net8.0/Tealium.Common.dll" target="lib/net8.0-ios12/Tealium.Common.dll" />
+    <file src="../../APIs/Tealium.Common/bin/Release/net8.0/Tealium.Common.dll" target="lib/net8.0-android33/Tealium.Common.dll" />
+
+    <!-- Platform-Specific Abstraction Libraries  -->
+    <file src="../../APIs/Tealium.iOS/bin/Release/net8.0-ios/Tealium.iOS.dll" target="lib/net8.0-ios12/Tealium.iOS.dll" />
+    <file src="../../APIs/Tealium.Droid/bin/Release/net8.0-android/Tealium.Droid.dll" target="lib/net8.0-android33/Tealium.Droid.dll" />
+    
+    <!-- Platform-Specific Bindings Libraries  -->
+    <!-- Main SDKs -->
+    <file src="../../APIs/Tealium.Platform.iOS/bin/Release/net8.0-ios/Tealium.Platform.iOS.dll" target="lib/net8.0-ios12/Tealium.Platform.iOS.dll" />
+    <file src="../../APIs/Tealium.Platform.iOS/bin/Release/net8.0-ios/Tealium.Platform.iOS.resources/**" target="lib/net8.0-ios12/Tealium.Platform.iOS.resources" />
+    <file src="../../APIs/Tealium.Platform.Droid/bin/Release/net8.0-android/Tealium.Platform.Droid.dll" target="lib/net8.0-android33/Tealium.Platform.Droid.dll" />
+    <file src="../../APIs/Tealium.Platform.Droid/bin/Release/net8.0-android/bindings-release.aar" target="lib/net8.0-android33/bindings-release.aar" />
+    <file src="../../LICENSE.txt" target=""/>
+    <file src="../../logo_64.png" target=""/>
+  </files>
+</package>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-ios</TargetFramework>
+    <ImplicitUsings>true</ImplicitUsings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\APIs\Tealium.Common\Tealium.Common.csproj" />
+    <ProjectReference Include="..\..\..\APIs\Tealium.iOS\Tealium.iOS.csproj" />
+    <ProjectReference Include="..\..\..\APIs\Tealium.Platform.iOS\Tealium.Platform.iOS.csproj" />
+    <ProjectReference Include="..\Tealium.RemoteCommands.Firebase.Common\Tealium.RemoteCommands.Firebase.Common.csproj" />
+    <PackageReference Include="Xamarin.Firebase.iOS.Analytics" Version="8.10.0.3" />
+    <PackageReference Include="Xamarin.Firebase.iOS.CloudMessaging" Version="8.10.0.3" />
+    <PackageReference Include="Xamarin.Firebase.iOS.Core" Version="8.10.0.3" />
+    <PackageReference Include="Xamarin.Firebase.iOS.Installations" Version="8.10.0.3" />
+  </ItemGroup>
+</Project>

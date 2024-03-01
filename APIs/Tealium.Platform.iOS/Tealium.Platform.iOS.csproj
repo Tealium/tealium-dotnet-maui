@@ -3,6 +3,7 @@
     <TargetFramework>net8.0-ios</TargetFramework>
     <ImplicitUsings>true</ImplicitUsings>
     <IsBindingProject>true</IsBindingProject>
+    <NoBindingEmbedding>true</NoBindingEmbedding>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,15 +13,15 @@
   <ItemGroup>
     <NativeReference Include="Release-fat\TealiumSwift.framework">
       <Kind>Framework</Kind>
-      <SmartLink>False</SmartLink>
+      <SmartLink>True</SmartLink>
     </NativeReference>
     <NativeReference Include="Release-fat\TealiumWrapperCocoapods.framework">
       <Kind>Framework</Kind>
-      <SmartLink>False</SmartLink>
+      <SmartLink>True</SmartLink>
     </NativeReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="XamarinApiDef\ApiDefinitions.cs" />
     <Compile Remove="XamarinApiDef\StructsAndEnums.cs" />
+    <Compile Remove="XamarinApiDef\ApiDefinitions.cs" />
   </ItemGroup>
 </Project>

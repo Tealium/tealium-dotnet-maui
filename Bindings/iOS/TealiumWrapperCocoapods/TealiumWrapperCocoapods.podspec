@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Tealium/tealium-maui'
+  s.homepage         = 'https://github.com/Tealium/tealium-dotnet-maui'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Tealium Inc.' => 'tealium@tealium.com' }
   s.source           = { :git => 'https://github.com/Tealium/tealium-swift.git', :tag => s.version.to_s }

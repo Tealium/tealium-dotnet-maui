@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Tealium.Maui</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Tealium</authors>
     <owners>Tealium</owners>
     <license type="file">LICENSE.txt</license>
@@ -11,7 +11,7 @@
     <iconUrl>https://github.com/Tealium/tealium-maui/raw/master/logo_64.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The Tealium MAUI integration brings support for Tealium's Native iOS and Android SDKs to the .NET MAUI platform. This package provides a single cross-platform API, enabling you to develop with Tealium once for both iOS and Android platforms. The Tealium Native SDKs for iOS and Android are embedded along with the lifecycle libraries.</description>
-    <releaseNotes>The embedded Tealium SDK versions are: iOS Swift v2.10.0 and Android Kotlin v1.5.5.</releaseNotes>
+    <releaseNotes>The embedded Tealium SDK versions are: iOS Swift v2.12.x and Android Kotlin v1.5.5.</releaseNotes>
     <copyright>Copyright 2024</copyright>
     <tags>Tealium iOS Android</tags>
     <!-- Insert within the <metadata> element -->

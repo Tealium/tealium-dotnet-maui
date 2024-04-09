@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Tealium.Maui</id>
+    <version>1.0.2</version>
+    <authors>Tealium</authors>
+    <owners>Tealium</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>logo_64.png</icon>
+    <projectUrl>https://github.com/Tealium/tealium-maui</projectUrl>
+    <iconUrl>https://github.com/Tealium/tealium-maui/raw/master/logo_64.png</iconUrl>
+    <description>The Tealium MAUI integration brings support for Tealium's Native iOS and Android SDKs to the .NET MAUI platform. This package provides a single cross-platform API, enabling you to develop with Tealium once for both iOS and Android platforms. The Tealium Native SDKs for iOS and Android are embedded along with the lifecycle libraries.</description>
+    <releaseNotes>The embedded Tealium SDK versions are: iOS Swift v2.12.x and Android Kotlin v1.5.5.</releaseNotes>
+    <copyright>Copyright 2024</copyright>
+    <tags>Tealium iOS Android</tags>
+    <dependencies>
+      <group targetFramework="net8.0-android33.0">
+        <dependency id="Xamarin.Kotlin.StdLib" version="[1.5.0, 2.0.0)" />
+        <dependency id="Xamarin.KotlinX.Coroutines.Core" version="[1.5.0, 2.0.0)" />
+        <dependency id="Xamarin.KotlinX.Coroutines.Android" version="[1.5.0, 2.0.0)" />
+      </group>
+      <group targetFramework="net8.0" />
+      <group targetFramework="net8.0-ios12.0" />
+    </dependencies>
+  </metadata>
+</package>

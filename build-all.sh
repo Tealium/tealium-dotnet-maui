@@ -5,7 +5,7 @@
 #Build properties
 Configuration=Release
 Platform=AnyCPU
-Net=net8.0
+Net=net9.0
 
 #Library names for reuse
 common=Tealium.Common

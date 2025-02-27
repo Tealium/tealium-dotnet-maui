@@ -52,7 +52,7 @@ namespace TealiumMauiExample.Teal
             {
                 if (tealium != null)
                 {
-                    System.Diagnostics.Debug.WriteLine($"Tealium initialized sucessfully ({config.Account}/{config.Profile})");
+                    System.Diagnostics.Debug.WriteLine($"Tealium initialized successfully ({config.Account}/{config.Profile})");
 
                     tealium.AddVisitorServiceListener((visitorProfile) =>
                     {

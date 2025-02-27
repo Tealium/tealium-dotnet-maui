@@ -5,7 +5,7 @@ using UIKit;
 using WebKit;
 
 #if !NET
-using NativeHandle = System.IntPtr;
+	using NativeHandle=System.IntPtr;
 #endif
 
 namespace Tealium.Platform.iOS

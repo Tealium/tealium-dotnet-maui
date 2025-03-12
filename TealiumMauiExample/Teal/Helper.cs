@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections;
+using Microsoft.Maui.Devices;
 using Tealium;
 
 namespace TealiumMauiExample.Teal
@@ -70,8 +71,8 @@ namespace TealiumMauiExample.Teal
                 if ((DeviceInfo.Current.Platform == DevicePlatform.MacCatalyst && DeviceInfo.Current.Version >= new Version(13, 3)) ||
                     (DeviceInfo.Current.Platform == DevicePlatform.iOS && DeviceInfo.Current.Version >= new Version(16, 4)))
                 {
-                    Tealium.iOS.TealiumIOSImpl teal = (Tealium.iOS.TealiumIOSImpl)tealium;
-                    teal.GetTagManagementWebView(webView => webView.Inspectable = true);
+                    // Tealium.iOS.TealiumIOSImpl teal = (Tealium.iOS.TealiumIOSImpl)tealium;
+                    // teal.GetTagManagementWebView(webView => webView.Inspectable = true);
                 }
 #endif
 

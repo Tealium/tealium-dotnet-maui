@@ -37,11 +37,11 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'tealium-swift/Core', '~> 2.15'
-  s.dependency 'tealium-swift/TagManagement', '~> 2.15'
-  s.dependency 'tealium-swift/Lifecycle', '~> 2.15'
-  s.dependency 'tealium-swift/VisitorService', '~> 2.15'
-  s.dependency 'tealium-swift/RemoteCommands', '~> 2.15'
-  s.dependency 'tealium-swift/Collect', '~> 2.15'
+  s.dependency 'tealium-swift/Core', '~> 2.16'
+  s.dependency 'tealium-swift/TagManagement', '~> 2.16'
+  s.dependency 'tealium-swift/Lifecycle', '~> 2.16'
+  s.dependency 'tealium-swift/VisitorService', '~> 2.16'
+  s.dependency 'tealium-swift/RemoteCommands', '~> 2.16'
+  s.dependency 'tealium-swift/Collect', '~> 2.16'
   
 end

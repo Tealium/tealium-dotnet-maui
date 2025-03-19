@@ -9,7 +9,7 @@
     <ProjectReference Include="..\Tealium.Platform.Droid\Tealium.Platform.Droid.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="2.0.21.2" />
-    <PackageReference Include="Xamarin.Kotlin.StdLib.Common" Version="2.0.21.2" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="[2.0.21.2, 3.0.0)" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib.Common" Version="[2.0.21.2, 3.0.0)" />
   </ItemGroup>
 </Project>

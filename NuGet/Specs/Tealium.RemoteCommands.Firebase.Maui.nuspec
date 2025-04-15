@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The Tealium Firebase Maui integration brings support for Tealium's Firebase remote command to the Maui platform. This package provides a single cross-platform API, enabling you to develop with Tealium once for both iOS and Android platforms.</description>
     <releaseNotes>First version of Tealium Firebase Maui</releaseNotes>
-    <copyright>Copyright 2022</copyright>
+    <copyright>Copyright 2025</copyright>
     <tags>Tealium Firebase iOS Android</tags>
     <!-- Insert within the <metadata> element -->
     <dependencies>

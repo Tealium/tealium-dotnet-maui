@@ -18,8 +18,8 @@
     <dependencies>
         <group targetFramework="net9.0-android34.0">
             <dependency id="Xamarin.Kotlin.StdLib" version="[2.0,3.0)" />
-            <dependency id="Xamarin.KotlinX.Coroutines.Core" version="[2.0,3.0)" />
-            <dependency id="Xamarin.KotlinX.Coroutines.Android" version="[2.0,3.0)" />
+            <dependency id="Xamarin.KotlinX.Coroutines.Core" version="[1.9,2.0)" />
+            <dependency id="Xamarin.KotlinX.Coroutines.Android" version="[1.9,2.0)" />
         </group>
         <group targetFramework="net9.0" />
         <group targetFramework="net9.0-ios15.0" />

@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-android</TargetFramework>
+    <TargetFramework>net9.0-android</TargetFramework>
     <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
@@ -9,7 +9,7 @@
     <ProjectReference Include="..\Tealium.Platform.Droid\Tealium.Platform.Droid.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.9.22" />
-    <PackageReference Include="Xamarin.Kotlin.StdLib.Common" Version="1.9.22" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="[2.0.21.2, 3.0.0)" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib.Common" Version="[2.0.21.2, 3.0.0)" />
   </ItemGroup>
 </Project>

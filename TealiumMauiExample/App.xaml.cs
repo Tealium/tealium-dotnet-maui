@@ -9,7 +9,11 @@ public partial class App : Application
 		InitializeComponent();
 
         DependencyService.Register<MockDataStore>();
-        MainPage = new AppShell();
+	}
+
+	protected override Window CreateWindow(IActivationState activationState)
+	{
+		return new Window(new AppShell());
 	}
 }
 

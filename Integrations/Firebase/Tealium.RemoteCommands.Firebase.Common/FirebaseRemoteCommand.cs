@@ -52,7 +52,7 @@ namespace Tealium.RemoteCommands.Firebase
 
         public string Name => "maui-"+CommandId;
 
-        public string Version => "1.0.0";
+        public string Version => "1.1.0";
 
         /// <summary>
         /// Handles the Remote Command response - this contains all the logic 

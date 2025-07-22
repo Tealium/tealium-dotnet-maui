@@ -27,6 +27,14 @@
                         <key>scheme</key>
                         <string>TealiumWrapperCocoapods</string>
                     </dict>
+                    <dict>
+                        <key>sdk</key>
+                        <string>macOSCatalyst</string>
+                        <key>workspace</key>
+                        <string>TealiumWrapperCocoapods.xcworkspace</string>
+                        <key>scheme</key>
+                        <string>TealiumWrapperCocoapods</string>
+                    </dict>
                 </array>
             </dict>
             <dict>
@@ -45,6 +53,14 @@
                     <dict>
                         <key>sdk</key>
                         <string>iOSSimulator</string>
+                        <key>workspace</key>
+                        <string>TealiumWrapperCocoapods.xcworkspace</string>
+                        <key>scheme</key>
+                        <string>tealium-swift</string>
+                    </dict>
+                    <dict>
+                        <key>sdk</key>
+                        <string>macOSCatalyst</string>
                         <key>workspace</key>
                         <string>TealiumWrapperCocoapods.xcworkspace</string>
                         <key>scheme</key>

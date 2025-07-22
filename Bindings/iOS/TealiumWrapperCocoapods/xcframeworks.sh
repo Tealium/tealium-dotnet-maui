@@ -32,7 +32,7 @@ for frameworkname in "$XCFRAMEWORK_PATH"/*.xcframework; do
     codesign -v "$frameworkname" --verbose
 done
 
-
+rm -rf "../../../../APIs/Tealium.Platform.iOS/${XCFRAMEWORK_PATH}"
 mv "./${XCFRAMEWORK_PATH}" "../../../../APIs/Tealium.Platform.iOS/"
 
 echo ""

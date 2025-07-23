@@ -37,7 +37,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
 
     embed "com.tealium:remotecommands:1.0.3"
-    embed "com.tealium:kotlin-core:1.7.3"
+    embed "com.tealium:kotlin-core:1.9.1"
     embed "com.tealium:kotlin-collect-dispatcher:1.1.4"
     embed "com.tealium:kotlin-lifecycle:1.2.3"
     embed "com.tealium:kotlin-remotecommand-dispatcher:1.5.3"

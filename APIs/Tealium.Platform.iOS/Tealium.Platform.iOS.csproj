@@ -7,17 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
-    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+    <ObjcBindingApiDefinition Include="XamarinApiDef\ApiDefinitions.cs" />
+    <ObjcBindingCoreSource Include="XamarinApiDef\StructsAndEnums.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="Release-fat\TealiumSwift.framework">
+    <NativeReference Include="tealium-xcframeworks\TealiumSwift.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
     </NativeReference>
-    <NativeReference Include="Release-fat\TealiumWrapperCocoapods.framework">
+    <NativeReference Include="tealium-xcframeworks\TealiumWrapperCocoapods.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
+      <Frameworks>TealiumSwift</Frameworks>
     </NativeReference>
   </ItemGroup>
   <ItemGroup>

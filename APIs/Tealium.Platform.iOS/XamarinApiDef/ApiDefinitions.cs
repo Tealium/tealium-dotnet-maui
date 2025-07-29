@@ -4,9 +4,6 @@ using ObjCRuntime;
 using UIKit;
 using WebKit;
 
-#if !NET
-	using NativeHandle=System.IntPtr;
-#endif
 
 namespace Tealium.Platform.iOS
 {

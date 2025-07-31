@@ -4,7 +4,7 @@
 
 For full documentation, please see the Tealium Developer Docs:
 
-https://docs.tealium.com/platforms/netmaui/
+https://docs.tealium.com/platforms/dotnet-maui/
 
 ## License
 

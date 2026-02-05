@@ -11,39 +11,9 @@
     <ObjcBindingCoreSource Include="XamarinApiDef\StructsAndEnums.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="tealium-xcframeworks\TealiumCore.xcframework">
-      <Kind>Framework</Kind>
-      <SmartLink>True</SmartLink>
-    </NativeReference>
-    <NativeReference Include="tealium-xcframeworks\TealiumCollect.xcframework">
-      <Kind>Framework</Kind>
-      <SmartLink>True</SmartLink>
-    </NativeReference>
-    <NativeReference Include="tealium-xcframeworks\TealiumLifecycle.xcframework">
-      <Kind>Framework</Kind>
-      <SmartLink>True</SmartLink>
-    </NativeReference>
-    <NativeReference Include="tealium-xcframeworks\TealiumRemoteCommands.xcframework">
-      <Kind>Framework</Kind>
-      <SmartLink>True</SmartLink>
-    </NativeReference>
-    <NativeReference Include="tealium-xcframeworks\TealiumTagManagement.xcframework">
-      <Kind>Framework</Kind>
-      <SmartLink>True</SmartLink>
-    </NativeReference>
-    <NativeReference Include="tealium-xcframeworks\TealiumVisitorService.xcframework">
-      <Kind>Framework</Kind>
-      <SmartLink>True</SmartLink>
-    </NativeReference>
     <NativeReference Include="tealium-xcframeworks\TealiumMauiWrapper.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
-      <Frameworks>TealiumCore</Frameworks>
-      <Frameworks>TealiumCollect</Frameworks>
-      <Frameworks>TealiumLifecycle</Frameworks>
-      <Frameworks>TealiumRemoteCommands</Frameworks>
-      <Frameworks>TealiumTagManagement</Frameworks>
-      <Frameworks>TealiumVisitorService</Frameworks>
     </NativeReference>
   </ItemGroup>
   <ItemGroup>

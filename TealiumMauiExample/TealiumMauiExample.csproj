@@ -66,18 +66,18 @@
 			</ReferenceSourceTarget>
 		</ProjectReference>
 	</ItemGroup>
-	<ItemGroup>
+	<!-- <ItemGroup>
 		<ProjectReference Include="..\Integrations\Firebase\Tealium.RemoteCommands.Firebase.Common\Tealium.RemoteCommands.Firebase.Common.csproj" />
-	</ItemGroup>
+	</ItemGroup> -->
 	<ItemGroup Condition="$(TargetFramework.Contains('-ios')) != false ">
 		<ProjectReference Include="..\APIs\Tealium.iOS\Tealium.iOS.csproj" />
 	</ItemGroup>
 	<ItemGroup Condition="$(TargetFramework.Contains('-ios')) != false ">
 		<ProjectReference Include="..\APIs\Tealium.Platform.iOS\Tealium.Platform.iOS.csproj" />
 	</ItemGroup>
-	<ItemGroup Condition="$(TargetFramework.Contains('-ios')) != false ">
+	<!-- <ItemGroup Condition="$(TargetFramework.Contains('-ios')) != false ">
 		<ProjectReference Include="..\Integrations\Firebase\Tealium.RemoteCommands.Firebase.iOS\Tealium.RemoteCommands.Firebase.iOS.csproj" />
-	</ItemGroup>
+	</ItemGroup> -->
 	<ItemGroup Condition="$(TargetFramework.Contains('-android')) != false ">
 		<ProjectReference Include="..\APIs\Tealium.Platform.Droid\Tealium.Platform.Droid.csproj">
 			<ReferenceSourceTarget>

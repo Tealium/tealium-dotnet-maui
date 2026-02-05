@@ -23,7 +23,7 @@ function zip_xcframeworks {
 #pod install
 
 # do the work
-#surmagic xcf
+surmagic xcf
 
 # Code Sign
 for frameworkname in "$XCFRAMEWORK_PATH"/*.xcframework; do

@@ -10,7 +10,11 @@
     <CreatePackage>false</CreatePackage>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tealium.Platform.iOS\Tealium.Platform.iOS.csproj" />
-    <ProjectReference Include="..\Tealium.Common\Tealium.Common.csproj" />
+    <ProjectReference Include="..\Tealium.Platform.iOS\Tealium.Platform.iOS.csproj">
+      <ReferenceSourceTarget></ReferenceSourceTarget>
+    </ProjectReference>
+    <ProjectReference Include="..\Tealium.Common\Tealium.Common.csproj">
+      <ReferenceSourceTarget></ReferenceSourceTarget>
+    </ProjectReference>
   </ItemGroup>
 </Project>

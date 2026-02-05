@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Tealium.Maui</id>
-    <version>1.2.0</version>
+    <version>1.2.3</version>
     <authors>Tealium</authors>
     <owners>Tealium</owners>
     <license type="file">LICENSE.txt</license>

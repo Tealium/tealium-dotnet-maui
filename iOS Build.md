@@ -1,9 +1,9 @@
 # iOS Build
 
-In order to make this project work for iOS, a TealiumSwift and a TealiumWrapperCocoapods framework need to be in the `APIs/Tealium.Platform.iOS/tealium-xcframeworks` folder.
-Installing them is as easy as running the `xcframeworks.sh` script in the `Bindings/iOS/TealiumWrapperCocoapods` directory.
+In order to make this project work for iOS, a TealiumMauiWrapper xcframework need to be in the `APIs/Tealium.Platform.iOS/tealium-xcframeworks` folder.
+Installing them is as easy as running the `xcframeworks.sh` script in the `Bindings/iOS/TealiumMauiWrapper` directory.
 ```bash
-Bindings/iOS/TealiumWrapperCocoapods/xcframeworks.sh
+Bindings/iOS/TealiumMauiWrapper/xcframeworks.sh
 ```
 This will compile both frameworks for device and simulator, merge them in two fat frameworks and place them in the correct place.
 

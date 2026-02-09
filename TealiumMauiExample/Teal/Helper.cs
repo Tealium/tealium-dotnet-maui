@@ -66,7 +66,7 @@ namespace TealiumMauiExample.Teal
                         System.Diagnostics.Debug.WriteLine("Consent Expired");
                     });
 
-#if IOS || MACCATALYST
+#if IOS
                 // Enable Developer Extras for Catalyst/iOS builds for 16.4+
                 if ((DeviceInfo.Current.Platform == DevicePlatform.MacCatalyst && DeviceInfo.Current.Version >= new Version(13, 3)) ||
                     (DeviceInfo.Current.Platform == DevicePlatform.iOS && DeviceInfo.Current.Version >= new Version(16, 4)))

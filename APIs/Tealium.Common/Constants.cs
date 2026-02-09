@@ -7,7 +7,7 @@ namespace Tealium
         public static class Values
         {
 			public const string pluginName = "Tealium-Maui";
-            public const string pluginVersion = "1.2.0";
+            public const string pluginVersion = "1.2.4";
         }
 
         public static class DataLayerKeys

@@ -9,7 +9,6 @@
             "type": "dotnet",
             "request": "launch",
             "projectPath": "${workspaceFolder}/TealiumMauiExample/TealiumMauiExample.csproj",
-            "launchConfigurationId": "FD7360EE-66D2-4A99-917A-A6AB1CE61237"
         }
     ]
 }

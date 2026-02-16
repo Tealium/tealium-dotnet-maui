@@ -11,14 +11,9 @@
     <ObjcBindingCoreSource Include="XamarinApiDef\StructsAndEnums.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="tealium-xcframeworks\TealiumSwift.xcframework">
+    <NativeReference Include="tealium-xcframeworks\TealiumMauiWrapper.xcframework">
       <Kind>Framework</Kind>
       <SmartLink>True</SmartLink>
-    </NativeReference>
-    <NativeReference Include="tealium-xcframeworks\TealiumWrapperCocoapods.xcframework">
-      <Kind>Framework</Kind>
-      <SmartLink>True</SmartLink>
-      <Frameworks>TealiumSwift</Frameworks>
     </NativeReference>
   </ItemGroup>
   <ItemGroup>

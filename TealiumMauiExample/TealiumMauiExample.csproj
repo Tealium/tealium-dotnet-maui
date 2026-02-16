@@ -58,6 +58,7 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Identity.Client.Extensions.Msal" Version="4.69.1" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.111" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\APIs\Tealium.Common\Tealium.Common.csproj">
@@ -65,18 +66,18 @@
 			</ReferenceSourceTarget>
 		</ProjectReference>
 	</ItemGroup>
-	<ItemGroup>
+	<!-- <ItemGroup>
 		<ProjectReference Include="..\Integrations\Firebase\Tealium.RemoteCommands.Firebase.Common\Tealium.RemoteCommands.Firebase.Common.csproj" />
-	</ItemGroup>
+	</ItemGroup> -->
 	<ItemGroup Condition="$(TargetFramework.Contains('-ios')) != false ">
 		<ProjectReference Include="..\APIs\Tealium.iOS\Tealium.iOS.csproj" />
 	</ItemGroup>
 	<ItemGroup Condition="$(TargetFramework.Contains('-ios')) != false ">
 		<ProjectReference Include="..\APIs\Tealium.Platform.iOS\Tealium.Platform.iOS.csproj" />
 	</ItemGroup>
-	<ItemGroup Condition="$(TargetFramework.Contains('-ios')) != false ">
+	<!-- <ItemGroup Condition="$(TargetFramework.Contains('-ios')) != false ">
 		<ProjectReference Include="..\Integrations\Firebase\Tealium.RemoteCommands.Firebase.iOS\Tealium.RemoteCommands.Firebase.iOS.csproj" />
-	</ItemGroup>
+	</ItemGroup> -->
 	<ItemGroup Condition="$(TargetFramework.Contains('-android')) != false ">
 		<ProjectReference Include="..\APIs\Tealium.Platform.Droid\Tealium.Platform.Droid.csproj">
 			<ReferenceSourceTarget>
